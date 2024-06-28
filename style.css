@@ -1,0 +1,124 @@
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: wheat;
+    padding: 10px;
+}
+
+
+
+.todo-app {
+    width: 100%;
+    
+    background: #FFBF00;
+    max-width: 540px;
+    padding: 40px 30px 70px;
+    margin: 100px auto 20px;
+    border-radius: 10px;
+}
+
+.todo-app h1 {
+    color: red;
+    
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.todo-app h1 img {
+    width: 30px;
+    margin-left: 10px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+    background: #edeef0;
+    
+}
+
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: large;
+    margin: 10px;
+    background: transparent;
+    
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    font-size: large;
+    cursor: pointer;
+    border-radius: 40px;
+    
+    background: red;
+    color: white; 
+}
+
+ul li {
+    font-size: 19px;
+    cursor: pointer;
+    padding: 10px 8px 12px 50px;
+    user-select: none;
+    list-style: none;
+    position: relative; 
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+
+ul li.checked {
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    background-image: url(redChecked.png);
+}
+
+ul li span {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0; 
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: blueviolet;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50px;
+    cursor: pointer; 
+}
+
+ul li span:hover {
+    background: red;
+    color: white; 
+}
+#end{
+    background:wheat;
+    color:black;
+    
+    font-size: large;
+    text-align: end;
+}
